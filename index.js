@@ -96,13 +96,13 @@ const mainRoot = {
   },
 };
 
-const loginRoot = {
-  root: {
-    component: {
-      name: 'Login',
-    },
-  },
-};
+// const loginRoot = {
+//   root: {
+//     component: {
+//       name: 'Login',
+//     },
+//   },
+// };
 
 Navigation.setDefaultOptions({
   statusBar: {

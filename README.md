@@ -7,10 +7,15 @@
 
 Dev: 
 - husky
-- eslint
+- eslint (for both js and ts)
+ "lint": "concurrently \"yarn type-check\" \"yarn tslint\" \"yarn prettier\" \"eslint .\""
 - prettier
+ "prettier": "prettier --check \"**/*.tsx\" \"**/*.ts\" \"**/*.js\"",
 - semantic-release
 - commmitlint
+- type check, tslint
+ "type-check": "tsc -p tsconfig.json --noEmit",
+ "tslint": "tslint -p tsconfig.json -c tslint.json",
 
 ```
 type(scope?): subject  #scope is optional; multiple scopes are supported (current delimiter options: "/", "\" and ",")
